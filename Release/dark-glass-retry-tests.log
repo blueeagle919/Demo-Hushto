@@ -1,0 +1,54 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /Users/easymin/Documents/Hushto/Hushto.xcodeproj -scheme Hushto -configuration Debug -destination "platform=iOS Simulator,id=628A44E0-80D1-4D55-809A-9A6658F78FC5" -derivedDataPath work/ReleaseQA CODE_SIGNING_ALLOWED=NO test-without-building -parallel-testing-enabled NO -disable-concurrent-destination-testing "-only-testing:HushtoTests/HushtoTests/testSessionPersistenceDuplicateReorderAndPDF" "-only-testing:HushtoTests/HushtoTests/testAllFiltersRenderAndCorruptPageCannotExportPartialPDF" "-only-testing:HushtoTests/HushtoTests/testPhotoBypassesScanSessionAndScanModesEnterSession" -resultBundlePath work/DarkGlassRetryTests.xcresult
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Writing result bundle at path:
+	/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DarkGlassRetryTests.xcresult
+
+2026-10-10 00:57:50.693103+0900 Hushto[19177:496487] [] <<<< FigCaptureSourceSimulator >>>> signalled err=-12784 at <>:236
+2026-10-10 00:57:50.693202+0900 Hushto[19177:496487] [] <<<< FigCaptureSourceSimulator >>>> signalled err=-12784 at <>:236
+2026-10-10 00:57:50.693268+0900 Hushto[19177:496487] [] <<<< FigCaptureSourceSimulator >>>> signalled err=-12784 at <>:236
+2026-10-10 00:57:50.694355+0900 Hushto[19177:496487] [] <<<< FigCaptureSourceSimulator >>>> signalled err=-12784 at <>:236
+2026-10-10 00:57:50.698014+0900 Hushto[19177:496487] [] <<<< FormatDescription >>>> signalled err=-12710 at <>:990
+2026-10-10 00:57:50.698127+0900 Hushto[19177:496487] [] (Fig) signalled err=-12710 at <>:645
+2026-10-10 00:57:50.700221+0900 Hushto[19177:496487] [] <<<< FormatDescription >>>> signalled err=-12710 at <>:990
+2026-10-10 00:57:50.700299+0900 Hushto[19177:496487] [] (Fig) signalled err=-12710 at <>:645
+2026-10-10 00:57:50.700427+0900 Hushto[19177:496487] [] <<<< FormatDescription >>>> signalled err=-12710 at <>:990
+2026-10-10 00:57:50.700483+0900 Hushto[19177:496487] [] (Fig) signalled err=-12710 at <>:645
+2026-10-10 00:57:50.700548+0900 Hushto[19177:496487] [] <<<< FigCaptureSourceSimulator >>>> signalled err=-12784 at <>:236
+2026-10-10 00:57:50.700607+0900 Hushto[19177:496487] [] <<<< FigCaptureSourceSimulator >>>> signalled err=-12784 at <>:236
+2026-10-10 00:57:52.436349+0900 Hushto[19177:496487] [SwiftUI] Invalid frame dimension (negative or non-finite).
+2026-10-10 00:57:53.762906+0900 Hushto[19177:496487] [XPCErrors] non-launching port is incompatible with service identifier "com.apple.PointerUI.pointeruid.default-service"
+2026-10-10 00:57:53.763794+0900 Hushto[19177:496487] [API] cannot add handler to 0 from 0 - dropping
+2026-10-10 00:57:53.767537+0900 Hushto[19177:496487] [API] cannot add handler to 0 from 0 - dropping
+Test Suite 'Selected tests' started at 2026-10-10 00:57:56.378.
+Test Suite 'HushtoTests.xctest' started at 2026-10-10 00:57:56.379.
+Test Suite 'HushtoTests' started at 2026-10-10 00:57:56.379.
+Test Case '-[HushtoTests.HushtoTests testAllFiltersRenderAndCorruptPageCannotExportPartialPDF]' started.
+Test Case '-[HushtoTests.HushtoTests testAllFiltersRenderAndCorruptPageCannotExportPartialPDF]' passed (0.870 seconds).
+Test Case '-[HushtoTests.HushtoTests testPhotoBypassesScanSessionAndScanModesEnterSession]' started.
+Test Case '-[HushtoTests.HushtoTests testPhotoBypassesScanSessionAndScanModesEnterSession]' passed (0.352 seconds).
+Test Case '-[HushtoTests.HushtoTests testSessionPersistenceDuplicateReorderAndPDF]' started.
+2026-10-10 00:57:57.740072+0900 Hushto[19177:497363] [] CVPixelBufferCreate returned err -6680. width 300, height 400, pixel format RGBA, options [ExtendedPixelsRight = 0, ExtendedPixelsBottom = 0, BytesPerRowAlignment = 64]
+2026-10-10 00:57:57.747139+0900 Hushto[19177:497363] [] CVPixelBufferCreate returned err -6680. width 300, height 400, pixel format RGBA, options [ExtendedPixelsRight = 0, ExtendedPixelsBottom = 0, BytesPerRowAlignment = 64]
+2026-10-10 00:57:57.748666+0900 Hushto[19177:497363] [] CVPixelBufferCreate returned err -6680. width 300, height 400, pixel format RGBA, options [ExtendedPixelsRight = 0, ExtendedPixelsBottom = 0, BytesPerRowAlignment = 64]
+2026-10-10 00:57:57.750349+0900 Hushto[19177:497363] [] CVPixelBufferCreate returned err -6680. width 300, height 400, pixel format RGBA, options [ExtendedPixelsRight = 0, ExtendedPixelsBottom = 0, BytesPerRowAlignment = 64]
+Test Case '-[HushtoTests.HushtoTests testSessionPersistenceDuplicateReorderAndPDF]' passed (0.885 seconds).
+Test Suite 'HushtoTests' passed at 2026-10-10 00:57:58.490.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 2.107 (2.111) seconds
+Test Suite 'HushtoTests.xctest' passed at 2026-10-10 00:57:58.491.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 2.107 (2.111) seconds
+Test Suite 'Selected tests' passed at 2026-10-10 00:57:58.491.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 2.107 (2.112) seconds
+2026-10-10 00:57:58.872 xcodebuild[18999:494635] [MT] IDETestOperationsObserverDebug: 49.382 elapsed -- Testing started completed.
+2026-10-10 00:57:58.872 xcodebuild[18999:494635] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-10 00:57:58.872 xcodebuild[18999:494635] [MT] IDETestOperationsObserverDebug: 49.382 sec, +49.382 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DarkGlassRetryTests.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started

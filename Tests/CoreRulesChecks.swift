@@ -1,0 +1,92 @@
+import Foundation
+import CoreMedia
+
+@main
+struct CoreRulesChecks {
+    static func main() {
+        precondition(CameraZoomRules.badgeText(factor: 1) == nil)
+        precondition(CameraZoomRules.badgeText(factor: 0.5) == nil)
+        precondition(CameraZoomRules.badgeText(factor: 1.5) == "1.5x")
+        precondition(CameraZoomRules.badgeText(factor: 2) == "2.0x")
+        precondition(CameraZoomRules.badgeText(factor: .nan) == nil)
+        precondition(CameraZoomRules.badgeText(factor: .infinity) == nil)
+        print("PASS: zoom status badge threshold and formatting")
+        precondition(CameraZoomRules.factor(start: 2, scale: 1.5, minimum: 1, maximum: 8) == 3)
+        precondition(CameraZoomRules.factor(start: 3, scale: 0.5, minimum: 1, maximum: 8) == 1.5)
+        precondition(CameraZoomRules.factor(start: 2, scale: 0.1, minimum: 1, maximum: 8) == 1)
+        precondition(CameraZoomRules.factor(start: 2, scale: 10, minimum: 1, maximum: 8) == 8)
+        precondition(CameraZoomRules.factor(start: 1, scale: .nan, minimum: 1, maximum: 8) == nil)
+        precondition(CameraZoomRules.factor(start: 1, scale: .infinity, minimum: 1, maximum: 8) == nil)
+        precondition(CameraZoomRules.factor(start: 1, scale: 0, minimum: 1, maximum: 8) == nil)
+        precondition(CameraZoomRules.factor(start: 1, scale: 2, minimum: 8, maximum: 1) == nil)
+        print("PASS: pinch zoom scaling, repeated gestures, hardware limits and invalid input")
+        let good = ["운영체제_3주차", "Lecture 01", "노트 (수정)"]
+        let bad = ["", "   ", ".", "..", "../private", "a/b", "a:b", "a\\b", "a\nb", String(repeating: "가", count: 101)]
+        for name in good { precondition(ScanRules.validFilename(name), "Rejected valid name: \(name)") }
+        for name in bad { precondition(!ScanRules.validFilename(name), "Accepted unsafe name") }
+        let first = Array(repeating: 0.1, count: 512) + Array(repeating: 0.9, count: 512)
+        let shifted = Array(repeating: 0.9, count: 512) + Array(repeating: 0.1, count: 512)
+        precondition(ScanRules.isDuplicate(first, first), "Identical page was missed")
+        precondition(ScanRules.isDuplicate(first, first.map { $0 + 0.01 }), "Small capture noise was rejected")
+        precondition(!ScanRules.isDuplicate(first, shifted), "Different layout with identical histogram was rejected as a duplicate")
+        precondition(!ScanRules.isDuplicate([], []), "Empty fingerprint was accepted")
+        precondition(!ScanRules.isDuplicate([0.5], [0.5, 0.5]), "Mismatched fingerprint was accepted")
+        var quiet = CaptureRequestGate()
+        precondition(quiet.begin(silent:true,canSuppressShutter:false,now:0) == .videoFrame)
+        quiet.completePhoto()
+        precondition(quiet.route == .videoFrame, "Unsupported quiet capture accepted a photo callback")
+        let token = quiet.token!
+        precondition(quiet.expire(token:token,now:4))
+        precondition(quiet.route == nil, "Timed out capture must not fall back to an audible photo")
+        precondition(quiet.begin(silent:true,canSuppressShutter:true,now:5,timeout:10) == .silentPhoto)
+        precondition(!quiet.consumeVideoFrame(now:6))
+        precondition(!quiet.expire(token:token,now:7), "Stale timeout cancelled the new capture")
+        quiet.completePhoto()
+        precondition(quiet.route == nil)
+        let hd = NativeCaptureQuality(width:1280,height:720,binned:false,photoPixels:12_192_768)
+        let uhd = NativeCaptureQuality(width:3840,height:2160,binned:false,photoPixels:12_192_768)
+        let full = NativeCaptureQuality(width:4032,height:3024,binned:false,photoPixels:12_192_768)
+        let binned = NativeCaptureQuality(width:4032,height:3024,binned:true,photoPixels:12_192_768)
+        precondition([full,hd,uhd,binned].max() == full)
+        precondition(full > uhd && uhd > hd && full > binned)
+        precondition(full.accepts(width:3024,height:4032))
+        precondition(!full.accepts(width:720,height:1280))
+        precondition(!full.accepts(width:3840,height:2160))
+        let thirty = CMTime(value:1,timescale:30)
+        let rounded = CMTime(seconds:1.0/30.0,preferredTimescale:1_000_000_000)
+        precondition(CMTimeCompare(rounded,thirty) < 0, "Regression must reproduce the old unsupported duration")
+        let exact = CaptureFrameTiming.duration(minimum:thirty,maximum:CMTime(value:1,timescale:1))
+        precondition(CMTimeCompare(exact,thirty) == 0)
+        let ntsc = CMTime(value:1001,timescale:30_000)
+        precondition(CMTimeCompare(CaptureFrameTiming.duration(minimum:ntsc,maximum:CMTime(value:1,timescale:1)),ntsc) == 0)
+        let sixty = CMTime(value:1,timescale:60)
+        precondition(CMTimeCompare(CaptureFrameTiming.duration(minimum:sixty,maximum:sixty),sixty) == 0)
+        let corners = [CGPoint(x:0.1,y:0.1),CGPoint(x:0.9,y:0.1),CGPoint(x:0.9,y:0.9),CGPoint(x:0.1,y:0.9)]
+        var scan = AutomaticScanStability()
+        precondition(!scan.observe(corners,now:0,enabled:true))
+        let jitter = corners.map { CGPoint(x:$0.x+0.01,y:$0.y-0.01) }
+        precondition(!scan.observe(jitter,now:0.5,enabled:true))
+        precondition(scan.observe(jitter,now:1,enabled:true), "Stable page did not trigger")
+        precondition(!scan.observe(corners,now:1.25,enabled:true))
+        for step in 6..<20 {
+            precondition(!scan.observe(corners,now:Double(step)/4,enabled:true), "Duplicate capture during cooldown")
+        }
+        precondition(scan.observe(corners,now:5,enabled:true))
+        scan.reset()
+        precondition(!scan.observe(corners,now:10,enabled:true))
+        precondition(!scan.observe(corners,now:10.5,enabled:true))
+        precondition(!scan.observe([],now:10.75,enabled:true))
+        precondition(scan.observe(corners,now:11,enabled:true), "Brief missed detection discarded steady page")
+        scan.reset()
+        precondition(!scan.observe(corners,now:20,enabled:true))
+        precondition(!scan.observe([],now:20.75,enabled:true))
+        precondition(!scan.observe(corners,now:21,enabled:true), "Lost document incorrectly triggered")
+        precondition(!scan.observe(corners.map { CGPoint(x:$0.x+0.1,y:$0.y) },now:22,enabled:true), "Moving page triggered")
+        precondition(!scan.observe(corners,now:23,enabled:false))
+        precondition(scan.progress == 0)
+        print("PASS: auto scan stability, hand jitter, cooldown, brief detection loss, motion and disabling")
+        print("PASS: exact 30fps, 29.97fps and fixed 60fps frame-duration bounds")
+        print("PASS: native 12MP/4K ranking and stale-buffer rejection")
+        print("PASS: 13 filename cases, 5 duplicate cases and quiet-capture routing/timeout checks")
+    }
+}

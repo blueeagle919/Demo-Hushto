@@ -1,0 +1,63 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /Users/easymin/Documents/Hushto/Hushto.xcodeproj -scheme Hushto -destination "platform=iOS Simulator,id=628A44E0-80D1-4D55-809A-9A6658F78FC5" -derivedDataPath work/ReleaseQA -resultBundlePath work/CaptureFlowFinalTests.xcresult
+
+Writing result bundle at path:
+	/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/CaptureFlowFinalTests.xcresult
+
+2026-10-09 23:24:02.416495+0900 Hushto[13905:367834] [] <<<< FigCaptureSourceSimulator >>>> signalled err=-12784 at <>:236
+2026-10-09 23:24:02.416613+0900 Hushto[13905:367834] [] <<<< FigCaptureSourceSimulator >>>> signalled err=-12784 at <>:236
+2026-10-09 23:24:02.416725+0900 Hushto[13905:367834] [] <<<< FigCaptureSourceSimulator >>>> signalled err=-12784 at <>:236
+2026-10-09 23:24:02.423028+0900 Hushto[13905:367834] [] <<<< FigCaptureSourceSimulator >>>> signalled err=-12784 at <>:236
+2026-10-09 23:24:02.440375+0900 Hushto[13905:367834] [] <<<< FormatDescription >>>> signalled err=-12710 at <>:990
+2026-10-09 23:24:02.440564+0900 Hushto[13905:367834] [] (Fig) signalled err=-12710 at <>:645
+2026-10-09 23:24:02.446507+0900 Hushto[13905:367834] [] <<<< FormatDescription >>>> signalled err=-12710 at <>:990
+2026-10-09 23:24:02.446670+0900 Hushto[13905:367834] [] (Fig) signalled err=-12710 at <>:645
+2026-10-09 23:24:02.446948+0900 Hushto[13905:367834] [] <<<< FormatDescription >>>> signalled err=-12710 at <>:990
+2026-10-09 23:24:02.447069+0900 Hushto[13905:367834] [] (Fig) signalled err=-12710 at <>:645
+2026-10-09 23:24:02.447302+0900 Hushto[13905:367834] [] <<<< FigCaptureSourceSimulator >>>> signalled err=-12784 at <>:236
+2026-10-09 23:24:02.447450+0900 Hushto[13905:367834] [] <<<< FigCaptureSourceSimulator >>>> signalled err=-12784 at <>:236
+2026-10-09 23:24:05.719718+0900 Hushto[13905:367834] [SwiftUI] Invalid frame dimension (negative or non-finite).
+2026-10-09 23:24:06.964128+0900 Hushto[13905:367834] [XPCErrors] non-launching port is incompatible with service identifier "com.apple.PointerUI.pointeruid.default-service"
+2026-10-09 23:24:06.969157+0900 Hushto[13905:367834] [API] cannot add handler to 0 from 0 - dropping
+2026-10-09 23:24:06.974814+0900 Hushto[13905:367834] [API] cannot add handler to 0 from 0 - dropping
+Test Suite 'All tests' started at 2026-10-09 23:24:12.961.
+Test Suite 'HushtoTests.xctest' started at 2026-10-09 23:24:12.962.
+Test Suite 'HushtoTests' started at 2026-10-09 23:24:12.962.
+Test Case '-[HushtoTests.HushtoTests testAllFiltersRenderAndCorruptPageCannotExportPartialPDF]' started.
+Test Case '-[HushtoTests.HushtoTests testAllFiltersRenderAndCorruptPageCannotExportPartialPDF]' passed (0.478 seconds).
+Test Case '-[HushtoTests.HushtoTests testOldTimeoutCannotCancelNewCapture]' started.
+Test Case '-[HushtoTests.HushtoTests testOldTimeoutCannotCancelNewCapture]' passed (0.001 seconds).
+Test Case '-[HushtoTests.HushtoTests testPhotoBypassesScanSessionAndScanModesEnterSession]' started.
+Test Case '-[HushtoTests.HushtoTests testPhotoBypassesScanSessionAndScanModesEnterSession]' passed (1.575 seconds).
+Test Case '-[HushtoTests.HushtoTests testPhotoLibrarySavesImageAndVideo]' started.
+2026-10-09 23:24:16.295387+0900 Hushto[13905:367834] [] (Fig) signalled err=-12900 at <>:2705
+2026-10-09 23:24:16.374000+0900 Hushto[13905:367834] [] (Fig) signalled err=-12900 at <>:2705
+Test Case '-[HushtoTests.HushtoTests testPhotoLibrarySavesImageAndVideo]' passed (2.469 seconds).
+Test Case '-[HushtoTests.HushtoTests testQuietRequestNeverAcceptsSystemPhotoOrSecondRequest]' started.
+Test Case '-[HushtoTests.HushtoTests testQuietRequestNeverAcceptsSystemPhotoOrSecondRequest]' passed (0.001 seconds).
+Test Case '-[HushtoTests.HushtoTests testSessionPersistenceDuplicateReorderAndPDF]' started.
+2026-10-09 23:24:17.609555+0900 Hushto[13905:368432] [] CVPixelBufferCreate returned err -6680. width 300, height 400, pixel format RGBA, options [ExtendedPixelsRight = 0, ExtendedPixelsBottom = 0, BytesPerRowAlignment = 64]
+2026-10-09 23:24:17.616328+0900 Hushto[13905:368432] [] CVPixelBufferCreate returned err -6680. width 300, height 400, pixel format RGBA, options [ExtendedPixelsRight = 0, ExtendedPixelsBottom = 0, BytesPerRowAlignment = 64]
+2026-10-09 23:24:17.618279+0900 Hushto[13905:368432] [] CVPixelBufferCreate returned err -6680. width 300, height 400, pixel format RGBA, options [ExtendedPixelsRight = 0, ExtendedPixelsBottom = 0, BytesPerRowAlignment = 64]
+2026-10-09 23:24:17.620237+0900 Hushto[13905:368432] [] CVPixelBufferCreate returned err -6680. width 300, height 400, pixel format RGBA, options [ExtendedPixelsRight = 0, ExtendedPixelsBottom = 0, BytesPerRowAlignment = 64]
+Test Case '-[HushtoTests.HushtoTests testSessionPersistenceDuplicateReorderAndPDF]' passed (0.171 seconds).
+Test Case '-[HushtoTests.HushtoTests testSyntheticSilentBufferProducesImageWithoutPhotoRequest]' started.
+Test Case '-[HushtoTests.HushtoTests testSyntheticSilentBufferProducesImageWithoutPhotoRequest]' passed (0.051 seconds).
+Test Case '-[HushtoTests.HushtoTests testTimeoutDoesNotFallBackToPhoto]' started.
+Test Case '-[HushtoTests.HushtoTests testTimeoutDoesNotFallBackToPhoto]' passed (0.000 seconds).
+Test Suite 'HushtoTests' passed at 2026-10-09 23:24:17.712.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 4.746 (4.750) seconds
+Test Suite 'HushtoTests.xctest' passed at 2026-10-09 23:24:17.714.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 4.746 (4.752) seconds
+Test Suite 'All tests' passed at 2026-10-09 23:24:17.715.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 4.746 (4.754) seconds
+2026-10-09 23:24:18.279 xcodebuild[13820:365926] [MT] IDETestOperationsObserverDebug: 61.700 elapsed -- Testing started completed.
+2026-10-09 23:24:18.282 xcodebuild[13820:365926] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-09 23:24:18.282 xcodebuild[13820:365926] [MT] IDETestOperationsObserverDebug: 61.700 sec, +61.700 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/CaptureFlowFinalTests.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started

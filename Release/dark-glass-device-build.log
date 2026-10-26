@@ -1,0 +1,238 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /Users/easymin/Documents/Hushto/Hushto.xcodeproj -scheme Hushto -configuration Release -sdk iphoneos -derivedDataPath work/DeviceRelease CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    SDKROOT = iphoneos27.0
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device }
+{ platform:macOS, arch:arm64, variant:Designed for [iPad,iPhone], id:00008112-001E19D12621401E, name:My Mac }
+{ platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device }
+{ platform:iOS Simulator, arch:arm64, id:0EB77BC2-B189-4711-ACF5-B646B4102EE3, OS:27.0, name:Hushto Layout SE }
+{ platform:iOS Simulator, arch:arm64, id:A8764A75-1754-4770-96D0-619CB686726E, OS:27.0, name:iPad (A16) }
+{ platform:iOS Simulator, arch:arm64, id:F41D511D-559F-462F-BBA5-0C34A3325969, OS:27.0, name:iPad Air 11-inch (M4) }
+{ platform:iOS Simulator, arch:arm64, id:B6751AD3-9A88-4198-872A-D2B4340898F5, OS:27.0, name:iPad Air 13-inch (M4) }
+{ platform:iOS Simulator, arch:arm64, id:F4861E6E-DEB8-43F9-8E52-9BB1EE0AAFF8, OS:27.0, name:iPad Pro 11-inch (M5) }
+{ platform:iOS Simulator, arch:arm64, id:5E78BE7A-9181-48A1-9BA0-675C51E1289E, OS:27.0, name:iPad Pro 13-inch (M5) }
+{ platform:iOS Simulator, arch:arm64, id:9D0FDF57-656A-4CC0-ABF0-E08D211FF9BB, OS:27.0, name:iPad mini (A17 Pro) }
+{ platform:iOS Simulator, arch:arm64, id:0D8D1270-6714-4FA3-A753-575A7A761917, OS:27.0, name:iPhone 17 }
+{ platform:iOS Simulator, arch:arm64, id:AEC75279-4EFD-4F86-9C99-1D7AE146FFFC, OS:27.0, name:iPhone 17e }
+{ platform:iOS Simulator, arch:arm64, id:628A44E0-80D1-4D55-809A-9A6658F78FC5, OS:27.0, name:iPhone 18 Pro }
+{ platform:iOS Simulator, arch:arm64, id:ADB3A761-C2F2-41A3-91FC-3CB6B7C3EF04, OS:27.0, name:iPhone 18 Pro Max }
+{ platform:iOS Simulator, arch:arm64, id:4D13DCD5-2665-46AC-9DD6-3E4D932376DC, OS:27.0, name:iPhone Air }
+{ platform:iOS, arch:arm64, id:00008110-0000248E1485801E, name:iPhone 13 mini }
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'Hushto' in project 'Hushto' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/easymin/Documents/Hushto/Hushto/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 6359d47dfa271ea733fe11cc26f96f72
+Build description path: /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/XCBuildData/6359d47dfa271ea733fe11cc26f96f72.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/SDKStatCaches.noindex/iphoneos27.0-24A430-e829b21a6f8c9b70876ba0858053c0446c78b3cbc238196c85e1bf6c792c5915.sdkstatcache
+    cd /Users/easymin/Documents/Hushto/Hushto.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -o /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/SDKStatCaches.noindex/iphoneos27.0-24A430-e829b21a6f8c9b70876ba0858053c0446c78b3cbc238196c85e1bf6c792c5915.sdkstatcache
+
+GenerateAssetSymbols /Users/easymin/Documents/Hushto/Hushto/Assets.xcassets (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/easymin/Documents/Hushto/Hushto/Assets.xcassets --compile /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app --output-format human-readable-text --notices --warnings --export-dependency-info /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_dependencies --output-partial-info-plist /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_generated_info.plist --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region ko --target-device iphone --minimum-deployment-target 17.0 --platform iphoneos --bundle-identifier app.hushto.scanner --generate-swift-asset-symbol-extensions NO --generate-swift-asset-symbols /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources/GeneratedAssetSymbols.h
+/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CompileAssetCatalogVariant thinned /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app /Users/easymin/Documents/Hushto/Hushto/Assets.xcassets (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/easymin/Documents/Hushto/Hushto/Assets.xcassets --compile /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region ko --target-device iphone --minimum-deployment-target 17.0 --platform iphoneos
+/* com.apple.actool.compilation-results */
+/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_generated_info.plist_thinned
+/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_output/thinned/AppIcon60x60@2x.png
+/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_output/thinned/Assets.car
+
+
+SwiftDriver Hushto normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Hushto -O @/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -target arm64-apple-ios17.0 -g -module-cache-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos -F /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos -emit-localized-strings -emit-localized-strings-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/SDKStatCaches.noindex/iphoneos27.0-24A430-e829b21a6f8c9b70876ba0858053c0446c78b3cbc238196c85e1bf6c792c5915.sdkstatcache -output-file-map /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/ModuleCache.noindex -sdk-module-cache-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto_const_extract_protocols.json -Xcc -iquote -Xcc /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto-generated-files.hmap -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto-own-target-headers.hmap -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto-all-target-headers.hmap -Xcc -iquote -Xcc /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto-project-headers.hmap -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/include -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources-normal/arm64 -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources/arm64 -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto-Swift.h -working-directory /Users/easymin/Documents/Hushto -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ GeneratedAssetSymbols.swift /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-SwiftPerFileCompile GeneratedAssetSymbols.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ Hushto (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    
+
+SwiftCompile normal arm64 Compiling\ Models.swift /Users/easymin/Documents/Hushto/Hushto/Models.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 /Users/easymin/Documents/Hushto/Hushto/Models.swift (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-SwiftPerFileCompile Models.swift
+
+SwiftCompile normal arm64 Compiling\ CameraScreenPreview.swift /Users/easymin/Documents/Hushto/Hushto/CameraScreenPreview.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 /Users/easymin/Documents/Hushto/Hushto/CameraScreenPreview.swift (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-SwiftPerFileCompile CameraScreenPreview.swift
+
+SwiftCompile normal arm64 Compiling\ CameraScreen.swift /Users/easymin/Documents/Hushto/Hushto/CameraScreen.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 /Users/easymin/Documents/Hushto/Hushto/CameraScreen.swift (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-SwiftPerFileCompile CameraScreen.swift
+
+SwiftCompile normal arm64 Compiling\ HushtoApp.swift /Users/easymin/Documents/Hushto/Hushto/HushtoApp.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 /Users/easymin/Documents/Hushto/Hushto/HushtoApp.swift (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-SwiftPerFileCompile HushtoApp.swift
+
+SwiftCompile normal arm64 Compiling\ ScanScreens.swift /Users/easymin/Documents/Hushto/Hushto/ScanScreens.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 /Users/easymin/Documents/Hushto/Hushto/ScanScreens.swift (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-SwiftPerFileCompile ScanScreens.swift
+
+SwiftCompile normal arm64 Compiling\ ScanStore.swift /Users/easymin/Documents/Hushto/Hushto/ScanStore.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 /Users/easymin/Documents/Hushto/Hushto/ScanStore.swift (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-SwiftPerFileCompile ScanStore.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling CameraScreenPreview.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 Compiling\ SettingsScreen.swift /Users/easymin/Documents/Hushto/Hushto/SettingsScreen.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 /Users/easymin/Documents/Hushto/Hushto/SettingsScreen.swift (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-SwiftPerFileCompile SettingsScreen.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling GeneratedAssetSymbols.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftDriverJobDiscovery normal arm64 Compiling HushtoApp.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 Compiling\ Camera.swift /Users/easymin/Documents/Hushto/Hushto/Camera.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 /Users/easymin/Documents/Hushto/Hushto/Camera.swift (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-SwiftPerFileCompile Camera.swift
+
+SwiftCompile normal arm64 Compiling\ ReleaseInfo.swift /Users/easymin/Documents/Hushto/Hushto/ReleaseInfo.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 /Users/easymin/Documents/Hushto/Hushto/ReleaseInfo.swift (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-SwiftPerFileCompile ReleaseInfo.swift
+
+SwiftCompile normal arm64 Compiling\ CoreRules.swift /Users/easymin/Documents/Hushto/Hushto/CoreRules.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 /Users/easymin/Documents/Hushto/Hushto/CoreRules.swift (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-SwiftPerFileCompile CoreRules.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling Models.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 Compiling\ Imaging.swift /Users/easymin/Documents/Hushto/Hushto/Imaging.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftCompile normal arm64 /Users/easymin/Documents/Hushto/Hushto/Imaging.swift (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-SwiftPerFileCompile Imaging.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling ReleaseInfo.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftDriverJobDiscovery normal arm64 Compiling CoreRules.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Imaging.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for Hushto (in target 'Hushto' from project 'Hushto')
+
+SwiftDriver\ Compilation\ Requirements Hushto normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Hushto -O @/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -target arm64-apple-ios17.0 -g -module-cache-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos -F /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos -emit-localized-strings -emit-localized-strings-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/SDKStatCaches.noindex/iphoneos27.0-24A430-e829b21a6f8c9b70876ba0858053c0446c78b3cbc238196c85e1bf6c792c5915.sdkstatcache -output-file-map /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/ModuleCache.noindex -sdk-module-cache-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto_const_extract_protocols.json -Xcc -iquote -Xcc /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto-generated-files.hmap -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto-own-target-headers.hmap -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto-all-target-headers.hmap -Xcc -iquote -Xcc /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto-project-headers.hmap -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/include -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources-normal/arm64 -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources/arm64 -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto-Swift.h -working-directory /Users/easymin/Documents/Hushto -experimental-emit-module-separately -disable-cmo
+
+LinkAssetCatalog /Users/easymin/Documents/Hushto/Hushto/Assets.xcassets (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-linkAssetCatalog --thinned /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_output/thinned --thinned-dependencies /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_generated_info.plist_thinned --unthinned /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_output/unthinned --unthinned-dependencies /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_generated_info.plist_unthinned --output /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app --plist-output /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_generated_info.plist
+note: Emplaced /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/AppIcon60x60@2x.png (in target 'Hushto' from project 'Hushto')
+note: Emplaced /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/Assets.car (in target 'Hushto' from project 'Hushto')
+
+Copy /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.swiftmodule/arm64-apple-ios.swiftmodule /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.swiftmodule (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.swiftmodule /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.swiftmodule/arm64-apple-ios.swiftmodule
+
+Copy /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.swiftmodule/arm64-apple-ios.abi.json /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.abi.json (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.abi.json /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.swiftmodule/arm64-apple-ios.abi.json
+
+Copy /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.swiftsourceinfo (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.swiftsourceinfo /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling ScanStore.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Camera.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SettingsScreen.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftDriverJobDiscovery normal arm64 Compiling CameraScreen.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftDriverJobDiscovery normal arm64 Compiling ScanScreens.swift (in target 'Hushto' from project 'Hushto')
+
+SwiftDriver\ Compilation Hushto normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Hushto -O @/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -target arm64-apple-ios17.0 -g -module-cache-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos -F /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos -emit-localized-strings -emit-localized-strings-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64 -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/SDKStatCaches.noindex/iphoneos27.0-24A430-e829b21a6f8c9b70876ba0858053c0446c78b3cbc238196c85e1bf6c792c5915.sdkstatcache -output-file-map /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/ModuleCache.noindex -sdk-module-cache-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto_const_extract_protocols.json -Xcc -iquote -Xcc /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto-generated-files.hmap -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto-own-target-headers.hmap -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto-all-target-headers.hmap -Xcc -iquote -Xcc /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto-project-headers.hmap -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/include -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources-normal/arm64 -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources/arm64 -Xcc -I/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto-Swift.h -working-directory /Users/easymin/Documents/Hushto -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/Hushto normal (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos -L/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos -F/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos -F/Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos -filelist /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto_lto.o -Xlinker -dependency_info -Xlinker /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.swiftmodule -o /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/Hushto
+
+ExtractAppIntentsMetadata (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.9SrJPs/Metal.xctoolchain --module-name Hushto --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.0.sdk --xcode-version 27A266a --platform-family iOS --deployment-target 17.0 --bundle-identifier app.hushto.scanner --output /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app --target-triple arm64-apple-ios17.0 --binary-file /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/Hushto --dependency-file /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto_dependency_info.dat --stringsdata-file /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.SwiftFileList --metadata-file-list /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto.DependencyMetadataFileList --static-metadata-file-list /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Hushto.DependencyStaticMetadataFileList --swift-const-vals-list /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/Objects-normal/arm64/Hushto.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-10 01:00:04.099 appintentsmetadataprocessor[19633:504201] Starting appintentsmetadataprocessor export
+2026-10-10 01:00:04.117 appintentsmetadataprocessor[19633:504201] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+ProcessInfoPlistFile /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/Info.plist /Users/easymin/Documents/Hushto/Hushto/Info.plist (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-infoPlistUtility /Users/easymin/Documents/Hushto/Hushto/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -additionalcontentfile /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/assetcatalog_generated_info.plist -requiredArchitecture arm64 -o /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/Info.plist
+
+CopySwiftLibs /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app (in target 'Hushto' from project 'Hushto')
+    cd /Users/easymin/Documents/Hushto
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/Hushto --scan-folder /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/Frameworks --scan-folder /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/PlugIns --scan-folder /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/SystemExtensions --scan-folder /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/Extensions --platform iphoneos --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v27.1.266.1.9SrJPs/Metal.xctoolchain --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Products/Release-iphoneos/Hushto.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/Hushto.build/Release-iphoneos/Hushto.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+PruneExplicitPrecompiledModules /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/easymin/Documents/Codex/2026-10-09/1-hushto-1-hushto-hush-photo/work/DeviceRelease/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+** BUILD SUCCEEDED **
+
