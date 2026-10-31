@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+        A9DF2D0113DED109A6762D24 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanFlowUITests.swift; sourceTree = "<group>"; };
+        2419EFAC4D7B9A41112B4767 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = "Demo-HushtoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+        0A2D407A2BDF31068FA296B5 = {isa = PBXBuildFile; fileRef = A9DF2D0113DED109A6762D24; };
+        193E0297C155586B6D7D1E02 = {isa = PBXGroup; children = (A9DF2D0113DED109A6762D24,); path = "Demo-HushtoUITests"; sourceTree = "<group>"; };
+        4DCFA88BC85311116A5E4778 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (0A2D407A2BDF31068FA296B5,); runOnlyForDeploymentPostprocessing = 0; };
+        CAECA1AAD863F223E3B78A5C = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+        00C396238DA7A37555864D12 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+        064CD7F9A335126B2EA18B58 = {isa = PBXTargetDependency; target = C00000000000000000000004; targetProxy = AB200000000000000000000D; };
+        B89044BEAC55B28CAC6BA3FA = {isa = PBXNativeTarget; buildConfigurationList = B88C1F66CD358CF447A6B5F1; buildPhases = (4DCFA88BC85311116A5E4778,CAECA1AAD863F223E3B78A5C,00C396238DA7A37555864D12,); buildRules = (); dependencies = (064CD7F9A335126B2EA18B58,); name = "Demo-HushtoUITests"; productName = "Demo-HushtoUITests"; productReference = 2419EFAC4D7B9A41112B4767; productType = "com.apple.product-type.bundle.ui-testing"; };
+        B88C1F66CD358CF447A6B5F1 = {isa = XCConfigurationList; buildConfigurations = (4A9268AC4DE31DBF48EAEC4B,EE8956862F164FEDB2DD3758,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+        4A9268AC4DE31DBF48EAEC4B = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = app.hushto.advanced.uitests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; TEST_TARGET_NAME = "Demo-Hushto"; TARGETED_DEVICE_FAMILY = "1,2"; CODE_SIGN_STYLE = Automatic; DEVELOPMENT_TEAM = GY7U3GB2FA;}; name = Debug; };
+        EE8956862F164FEDB2DD3758 = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = app.hushto.advanced.uitests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 17.0; TEST_TARGET_NAME = "Demo-Hushto"; TARGETED_DEVICE_FAMILY = "1,2"; CODE_SIGN_STYLE = Automatic; DEVELOPMENT_TEAM = GY7U3GB2FA;}; name = Release; };
+
+
+/* Begin PBXBuildFile section */
+		3AFDE0A945A0CF8327A89AFB /* IPadEnhanceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B5C18C4765766A8584C571 /* IPadEnhanceScreen.swift */; };
+		7E33322FA140527A7116F27B /* IPadPagesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7500018F1FCB33B80F1BC5A8 /* IPadPagesScreen.swift */; };
+		AB2000000000000000000004 /* Demo-HushtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2000000000000000000003 /* Demo-HushtoTests.swift */; };
+		ADE5077149C07E47DC0C6EC2 /* EnhanceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C78025938B445A5CC5F36E7 /* EnhanceScreen.swift */; };
+		AF03EA44D99B31697D97AB89 /* EditorControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF94C15E53E13E9FF028BB91 /* EditorControls.swift */; };
+		B00000000000000000000000 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000000 /* Camera.swift */; };
+		B00000000000000000000001 /* CameraScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000001 /* CameraScreen.swift */; };
+		B00000000000000000000002 /* CoreRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000002 /* CoreRules.swift */; };
+		B00000000000000000000003 /* Demo-HushtoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000003 /* Demo-HushtoApp.swift */; };
+		B00000000000000000000004 /* Imaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000004 /* Imaging.swift */; };
+		B00000000000000000000005 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000005 /* Models.swift */; };
+		B00000000000000000000006 /* ScanScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000006 /* ScanScreens.swift */; };
+		B00000000000000000000007 /* ScanStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000007 /* ScanStore.swift */; };
+		B00000000000000000000008 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000008 /* SettingsScreen.swift */; };
+		BB1000000000000000000001 /* ReleaseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1000000000000000000001 /* ReleaseInfo.swift */; };
+		BB1000000000000000000002 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AA1000000000000000000002 /* PrivacyInfo.xcprivacy */; };
+		BD1900000000000000000001 /* IPadLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1900000000000000000001 /* IPadLayout.swift */; };
+		BD1900000000000000000002 /* IPadCameraScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1900000000000000000002 /* IPadCameraScreen.swift */; };
+		BD1900000000000000000003 /* IPadScanScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1900000000000000000003 /* IPadScanScreens.swift */; };
+		BD1900000000000000000004 /* IPadSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1900000000000000000004 /* IPadSettingsScreen.swift */; };
+		CCE5D97D6E251B4C396D099A /* ExportScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F3732104CADA6837EC1CA /* ExportScreens.swift */; };
+		D00000000000000000000005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00000000000000000000001 /* Assets.xcassets */; };
+		D00000000000000000000007 /* SimulatorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00000000000000000000008 /* SimulatorAssets.xcassets */; };
+		D327D2633078FCE1002448CA /* CameraScreenPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327D2623078FCE1002448CA /* CameraScreenPreview.swift */; };
+		DD13B51AF77423295870AC31 /* PagesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD251C3CD4471140536F5C7 /* PagesScreen.swift */; };
+		DDE3D77AD0C0D36F0950D246 /* IPadExportScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4368FDB0418610DEFF8235C /* IPadExportScreen.swift */; };
+		E04FF1C5979CB4DA16E2EF69 /* CropEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D406606322B9CF82DB1740B /* CropEditor.swift */; };
+		E584A2E57450B971BE8C1C5F /* CaptureMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F765F17CB81F14962ED50C7 /* CaptureMode.swift */; };
+		EC255972AF6949732A50CC6B /* GlassControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059266845B7021DB85493A00 /* GlassControls.swift */; };
+		7FB625779552EEB53EF605DB /* CameraModeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6D91529814E6089C7578A5 /* CameraModeSelector.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB200000000000000000000D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C00000000000000000000005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C00000000000000000000004;
+			remoteInfo = Demo_Hushto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		059266845B7021DB85493A00 /* GlassControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassControls.swift; sourceTree = "<group>"; };
+		3C78025938B445A5CC5F36E7 /* EnhanceScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhanceScreen.swift; sourceTree = "<group>"; };
+		5D406606322B9CF82DB1740B /* CropEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropEditor.swift; sourceTree = "<group>"; };
+		7500018F1FCB33B80F1BC5A8 /* IPadPagesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadPagesScreen.swift; sourceTree = "<group>"; };
+		7BD251C3CD4471140536F5C7 /* PagesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesScreen.swift; sourceTree = "<group>"; };
+		7F765F17CB81F14962ED50C7 /* CaptureMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureMode.swift; sourceTree = "<group>"; };
+		848F3732104CADA6837EC1CA /* ExportScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportScreens.swift; sourceTree = "<group>"; };
+		A00000000000000000000000 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		A00000000000000000000001 /* CameraScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreen.swift; sourceTree = "<group>"; };
+		A00000000000000000000002 /* CoreRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreRules.swift; sourceTree = "<group>"; };
+		A00000000000000000000003 /* Demo-HushtoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Demo-HushtoApp.swift"; sourceTree = "<group>"; };
+		A00000000000000000000004 /* Imaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imaging.swift; sourceTree = "<group>"; };
+		A00000000000000000000005 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A00000000000000000000006 /* ScanScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanScreens.swift; sourceTree = "<group>"; };
+		A00000000000000000000007 /* ScanStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanStore.swift; sourceTree = "<group>"; };
+		A00000000000000000000008 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		A4368FDB0418610DEFF8235C /* IPadExportScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadExportScreen.swift; sourceTree = "<group>"; };
+		AA1000000000000000000001 /* ReleaseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseInfo.swift; sourceTree = "<group>"; };
+		AA1000000000000000000002 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		AB2000000000000000000003 /* Demo-HushtoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Demo-HushtoTests.swift"; sourceTree = "<group>"; };
+		AB2000000000000000000008 /* Demo-HushtoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = "Demo-HushtoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1900000000000000000001 /* IPadLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadLayout.swift; sourceTree = "<group>"; };
+		AD1900000000000000000002 /* IPadCameraScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadCameraScreen.swift; sourceTree = "<group>"; };
+		AD1900000000000000000003 /* IPadScanScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadScanScreens.swift; sourceTree = "<group>"; };
+		AD1900000000000000000004 /* IPadSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadSettingsScreen.swift; sourceTree = "<group>"; };
+		B2B5C18C4765766A8584C571 /* IPadEnhanceScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPadEnhanceScreen.swift; sourceTree = "<group>"; };
+		CF94C15E53E13E9FF028BB91 /* EditorControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorControls.swift; sourceTree = "<group>"; };
+		D00000000000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D00000000000000000000003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D00000000000000000000004 /* Demo-Hushto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = "Demo-Hushto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00000000000000000000008 /* SimulatorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SimulatorAssets.xcassets; sourceTree = "<group>"; };
+		D327D2623078FCE1002448CA /* CameraScreenPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreenPreview.swift; sourceTree = "<group>"; };
+		BA6D91529814E6089C7578A5 /* CameraModeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModeSelector.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB2000000000000000000007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28A008544C936628384F2DAC /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000007 /* ScanStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		35D315DEBBF45F223B169A61 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7F765F17CB81F14962ED50C7 /* CaptureMode.swift */,
+				A00000000000000000000002 /* CoreRules.swift */,
+				A00000000000000000000005 /* Models.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		72D66A768EAB9C62464CB4FA /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				7BD251C3CD4471140536F5C7 /* PagesScreen.swift */,
+				7500018F1FCB33B80F1BC5A8 /* IPadPagesScreen.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		88F6051D365956F1766DE80E /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				059266845B7021DB85493A00 /* GlassControls.swift */,
+				BA6D91529814E6089C7578A5 /* CameraModeSelector.swift */,
+				CF94C15E53E13E9FF028BB91 /* EditorControls.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		8C266FA1BD69823933C81E1F /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				848F3732104CADA6837EC1CA /* ExportScreens.swift */,
+				A4368FDB0418610DEFF8235C /* IPadExportScreen.swift */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		A13C70DC74F8B3C0AE17CF53 /* Imaging */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000004 /* Imaging.swift */,
+				5D406606322B9CF82DB1740B /* CropEditor.swift */,
+			);
+			path = Imaging;
+			sourceTree = "<group>";
+		};
+		AB2000000000000000000002 /* Demo-HushtoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB2000000000000000000003 /* Demo-HushtoTests.swift */,
+			);
+			path = "Demo-HushtoTests";
+			sourceTree = "<group>";
+		};
+		C00000000000000000000001 /* Hushto */ = {
+			isa = PBXGroup;
+			children = (
+				D1D0524B025E57AFFF263442 /* App */,
+				35D315DEBBF45F223B169A61 /* Core */,
+				88F6051D365956F1766DE80E /* DesignSystem */,
+				E50F13E9B62B6AD88DB9F12B /* Camera */,
+				A13C70DC74F8B3C0AE17CF53 /* Imaging */,
+				E52031518F082EF24063321C /* Editor */,
+				72D66A768EAB9C62464CB4FA /* Pages */,
+				8C266FA1BD69823933C81E1F /* Export */,
+				28A008544C936628384F2DAC /* Storage */,
+				D0CA17BBA4161446FC3D6EE6 /* Settings */,
+				D00000000000000000000001 /* Assets.xcassets */,
+				D00000000000000000000008 /* SimulatorAssets.xcassets */,
+				D00000000000000000000003 /* Info.plist */,
+				AA1000000000000000000002 /* PrivacyInfo.xcprivacy */,
+			);
+			path = "Demo-Hushto";
+			sourceTree = "<group>";
+		};
+		C00000000000000000000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D00000000000000000000004 /* Demo-Hushto.app */,
+                2419EFAC4D7B9A41112B4767,
+				AB2000000000000000000008 /* Demo-HushtoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C00000000000000000000003 = {
+			isa = PBXGroup;
+			children = (
+				C00000000000000000000001 /* Hushto */,
+				C00000000000000000000002 /* Products */,
+                193E0297C155586B6D7D1E02,
+				AB2000000000000000000002 /* Demo-HushtoTests */,
+			);
+			sourceTree = "<group>";
+		};
+		D0CA17BBA4161446FC3D6EE6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000008 /* SettingsScreen.swift */,
+				AD1900000000000000000004 /* IPadSettingsScreen.swift */,
+				AA1000000000000000000001 /* ReleaseInfo.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D1D0524B025E57AFFF263442 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000003 /* Demo-HushtoApp.swift */,
+				AD1900000000000000000001 /* IPadLayout.swift */,
+				D327D2623078FCE1002448CA /* CameraScreenPreview.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E50F13E9B62B6AD88DB9F12B /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000000 /* Camera.swift */,
+				A00000000000000000000001 /* CameraScreen.swift */,
+				AD1900000000000000000002 /* IPadCameraScreen.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		E52031518F082EF24063321C /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000006 /* ScanScreens.swift */,
+				AD1900000000000000000003 /* IPadScanScreens.swift */,
+				3C78025938B445A5CC5F36E7 /* EnhanceScreen.swift */,
+				B2B5C18C4765766A8584C571 /* IPadEnhanceScreen.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB2000000000000000000001 /* Demo-HushtoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB200000000000000000000B /* Build configuration list for PBXNativeTarget "Demo-HushtoTests" */;
+			buildPhases = (
+				AB2000000000000000000005 /* Sources */,
+				AB2000000000000000000007 /* Frameworks */,
+				AB2000000000000000000006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB200000000000000000000C /* PBXTargetDependency */,
+			);
+			name = "Demo-HushtoTests";
+			productName = "Demo-HushtoTests";
+			productReference = AB2000000000000000000008 /* Demo-HushtoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C00000000000000000000004 /* Demo_Hushto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F00000000000000000000006 /* Build configuration list for PBXNativeTarget "Demo_Hushto" */;
+			buildPhases = (
+				E00000000000000000000001 /* Sources */,
+				E00000000000000000000003 /* Frameworks */,
+				E00000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Demo-Hushto";
+			productName = "Demo-Hushto";
+			productReference = D00000000000000000000004 /* Demo-Hushto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C00000000000000000000005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2710;
+			};
+			buildConfigurationList = F00000000000000000000005 /* Build configuration list for PBXProject "Demo_Hushto" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ko,
+				en,
+				Base,
+			);
+			mainGroup = C00000000000000000000003;
+			productRefGroup = C00000000000000000000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+                B89044BEAC55B28CAC6BA3FA,
+				C00000000000000000000004 /* Demo_Hushto */,
+				AB2000000000000000000001 /* Demo-HushtoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB2000000000000000000006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00000000000000000000005 /* Assets.xcassets in Resources */,
+				D00000000000000000000007 /* SimulatorAssets.xcassets in Resources */,
+				BB1000000000000000000002 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB2000000000000000000005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2000000000000000000004 /* Demo-HushtoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00000000000000000000000 /* Camera.swift in Sources */,
+				B00000000000000000000001 /* CameraScreen.swift in Sources */,
+				B00000000000000000000002 /* CoreRules.swift in Sources */,
+				B00000000000000000000003 /* Demo-HushtoApp.swift in Sources */,
+				B00000000000000000000004 /* Imaging.swift in Sources */,
+				B00000000000000000000005 /* Models.swift in Sources */,
+				B00000000000000000000006 /* ScanScreens.swift in Sources */,
+				D327D2633078FCE1002448CA /* CameraScreenPreview.swift in Sources */,
+				B00000000000000000000007 /* ScanStore.swift in Sources */,
+				B00000000000000000000008 /* SettingsScreen.swift in Sources */,
+				BD1900000000000000000004 /* IPadSettingsScreen.swift in Sources */,
+				BD1900000000000000000003 /* IPadScanScreens.swift in Sources */,
+				BD1900000000000000000002 /* IPadCameraScreen.swift in Sources */,
+				BD1900000000000000000001 /* IPadLayout.swift in Sources */,
+				BB1000000000000000000001 /* ReleaseInfo.swift in Sources */,
+				DD13B51AF77423295870AC31 /* PagesScreen.swift in Sources */,
+				DDE3D77AD0C0D36F0950D246 /* IPadExportScreen.swift in Sources */,
+				CCE5D97D6E251B4C396D099A /* ExportScreens.swift in Sources */,
+				AF03EA44D99B31697D97AB89 /* EditorControls.swift in Sources */,
+				E04FF1C5979CB4DA16E2EF69 /* CropEditor.swift in Sources */,
+				7E33322FA140527A7116F27B /* IPadPagesScreen.swift in Sources */,
+				EC255972AF6949732A50CC6B /* GlassControls.swift in Sources */,
+				7FB625779552EEB53EF605DB /* CameraModeSelector.swift in Sources */,
+				E584A2E57450B971BE8C1C5F /* CaptureMode.swift in Sources */,
+				3AFDE0A945A0CF8327A89AFB /* IPadEnhanceScreen.swift in Sources */,
+				ADE5077149C07E47DC0C6EC2 /* EnhanceScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB200000000000000000000C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C00000000000000000000004 /* Demo_Hushto */;
+			targetProxy = AB200000000000000000000D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AB2000000000000000000009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.hushto.advanced.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo-Hushto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Demo-Hushto";
+			};
+			name = Debug;
+		};
+		AB200000000000000000000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.hushto.advanced.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo-Hushto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Demo-Hushto";
+			};
+			name = Release;
+		};
+		F00000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -driver-batch-count 2";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F00000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F00000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GY7U3GB2FA;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*]" = SimulatorAssets.xcassets;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Demo-Hushto/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				PRODUCT_BUNDLE_IDENTIFIER = app.hushto;
+				PRODUCT_MODULE_NAME = Demo_Hushto;
+				PRODUCT_NAME = "Demo-Hushto";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F00000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GY7U3GB2FA;
+				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*]" = SimulatorAssets.xcassets;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Demo-Hushto/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				PRODUCT_BUNDLE_IDENTIFIER = app.hushto;
+				PRODUCT_MODULE_NAME = Demo_Hushto;
+				PRODUCT_NAME = "Demo-Hushto";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB200000000000000000000B /* Build configuration list for PBXNativeTarget "Demo-HushtoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2000000000000000000009 /* Debug */,
+				AB200000000000000000000A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F00000000000000000000005 /* Build configuration list for PBXProject "Demo_Hushto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00000000000000000000001 /* Debug */,
+				F00000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F00000000000000000000006 /* Build configuration list for PBXNativeTarget "Demo_Hushto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00000000000000000000003 /* Debug */,
+				F00000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C00000000000000000000005 /* Project object */;
+}
