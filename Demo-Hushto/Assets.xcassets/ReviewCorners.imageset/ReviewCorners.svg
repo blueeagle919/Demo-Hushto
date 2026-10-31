@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="300" height="443" viewBox="0 0 300 443" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Camera / Detection corners" clip-path="url(#clip0_0_4)">
+<path id="Vector" d="M1.04895 36.7057V1.26571H30.4196M269.58 1.26571H298.951V36.7057M298.951 406.294V441.734H269.58M30.4196 441.734H1.04895V406.294" stroke-width="2" stroke-linecap="round" stroke="#202020"/>
+</g>
+<defs>
+<clipPath id="clip0_0_4">
+<rect width="300" height="443" fill="white"/>
+</clipPath>
+</defs>
+</svg>

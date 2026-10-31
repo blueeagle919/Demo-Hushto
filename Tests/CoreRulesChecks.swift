@@ -4,6 +4,43 @@ import CoreMedia
 @main
 struct CoreRulesChecks {
     static func main() {
+        // Interrupting a settling animation must preserve its fractional position.
+        precondition(abs(CaptureModeDragRules.position(start: 0.7, translation: -18, step: 90) - 0.9) < 0.0001)
+        precondition(abs(CaptureModeDragRules.position(start: 1.3, translation: 18, step: 90) - 1.1) < 0.0001)
+        precondition(CaptureModeDragRules.position(start: 1.4, translation: 0, step: 90) == 1.4)
+        precondition(CaptureModeDragRules.position(start: 1.4, translation: .nan, step: 90) == 1.4)
+        print("PASS: continuous fractional drag positions without release/reset jumps")
+
+        precondition(CaptureModeDragRules.index(start: 1, translation: 0, step: 90) == 1)
+        precondition(CaptureModeDragRules.index(start: 1, translation: -90, step: 90) == 2)
+        precondition(CaptureModeDragRules.index(start: 1, translation: 90, step: 90) == 0)
+        precondition(CaptureModeDragRules.index(start: 0, translation: -180, step: 90) == 2)
+        precondition(CaptureModeDragRules.index(start: 2, translation: -900, step: 90) == 2)
+        precondition(CaptureModeDragRules.index(start: 0, translation: 900, step: 90) == 0)
+        precondition(CaptureModeDragRules.index(start: 1, translation: 20, step: 90) == 1)
+        precondition(CaptureModeDragRules.index(start: 1, translation: .nan, step: 90) == 1)
+        precondition(CaptureModeDragRules.index(start: 1, translation: 90, step: 0) == 1)
+        print("PASS: drag direction, direct selection, short movement and bounded endpoints")
+
+        precondition(CaptureMode.allCases == [.video, .photo, .scan])
+        for old in ["문서", "칠판", "스크린", "스캔"] {
+            precondition(CaptureMode.restored(old) == .scan)
+            let decoded = try! JSONDecoder().decode(CaptureMode.self, from: JSONEncoder().encode(old))
+            precondition(decoded == .scan)
+        }
+        for mode in CaptureMode.allCases {
+            let roundTrip = try! JSONDecoder().decode(CaptureMode.self, from: JSONEncoder().encode(mode))
+            precondition(roundTrip == mode)
+            precondition(mode.needsCorrection == (mode == .scan))
+            precondition(mode.savesToPhotoLibrary == (mode != .scan))
+        }
+        precondition(CaptureMode.restored("unknown") == .photo)
+        do {
+            _ = try JSONDecoder().decode(CaptureMode.self, from: Data("\"unknown\"".utf8))
+            preconditionFailure("Unknown manifest modes must not silently corrupt a session")
+        } catch { }
+        print("PASS: Advanced three-mode routing, legacy scan decoding and persistence round trips")
+
         precondition(CameraZoomRules.badgeText(factor: 1) == nil)
         precondition(CameraZoomRules.badgeText(factor: 0.5) == nil)
         precondition(CameraZoomRules.badgeText(factor: 1.5) == "1.5x")
